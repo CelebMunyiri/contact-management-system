@@ -52,10 +52,13 @@ ul{
     list-style: none;
 }
 ul li{
+    position: relative;
     border-bottom: 1px solid gray;
     height: 30px;
     color: rgb(167, 125, 19);
     font-weight: 400;
+    width: 100%;
+    
 }
 span{
     color:black;
