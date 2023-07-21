@@ -11,9 +11,11 @@ section{
     height: 100%;
 }
 .container{
+    position: relative;
+    top: 10px;
     margin: auto;
     width: 30%;
-    height: 100%;
+    height: 90%;
     border: 1px solid gray;
     box-shadow: 0 0 10px rgba(170, 119, 119, 0.7);
     border-radius: 20px;
@@ -36,6 +38,10 @@ input{
     margin: 5px;
     border-radius: 10px;
     outline: none;
+    background: rgb(218, 215, 215);
+    color: gold;
+    border: none;
+    
 
 }
 .create-user button{
@@ -48,7 +54,8 @@ ul{
 ul li{
     border-bottom: 1px solid gray;
     height: 30px;
-    color: goldenrod;
+    color: rgb(167, 125, 19);
+    font-weight: 400;
 }
 span{
     color:black;
