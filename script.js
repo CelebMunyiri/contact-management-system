@@ -44,7 +44,7 @@ class Contact {
     contacts.forEach((contact, index) => {
       const liElement = document.createElement('li');
       liElement.innerHTML = `
-        <strong>${contact.name}</strong> (${contact.phone})
+        <span>Name</span/>${contact.name}<span> Number</span>${contact.phone}
         <button onclick="editContact(${index})">Edit</button>
         <button onclick="deleteContact(${index})">Delete</button>
       `;
