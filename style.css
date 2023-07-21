@@ -21,7 +21,7 @@ section{
 .create-user{
     height: 15%;
     width: 100%;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(105, 105, 105);
     
 }
 .contact-list{
