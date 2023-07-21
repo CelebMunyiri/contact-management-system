@@ -45,7 +45,7 @@ class Contact {
       const liElement = document.createElement('li');
       liElement.innerHTML = `
         <span>Name:  </span/>${contact.name}<span>  Number: </span>${contact.phone}
-        <button onclick="editContact(${index})">Update</button>
+        <button onclick="updateContact(${index})">Update</button>
         <button onclick="deleteContact(${index})">Delete</button>
       `;
       contactListElement.appendChild(liElement);
@@ -64,7 +64,7 @@ class Contact {
     displayContacts();
   }
   
-  function editContact(index) {
+  function updateContact(index) {
     const contact = contactManagement.getAllContacts()[index];
     const newName = prompt('Enter new name:', contact.name);
     const newPhone = prompt('Enter new phone:', contact.phone);
