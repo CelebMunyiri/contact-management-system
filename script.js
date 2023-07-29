@@ -1,3 +1,4 @@
+'use strict'
 class Contact {
     constructor(name, phone) {
       this.name = name;
@@ -13,7 +14,7 @@ class Contact {
     addContact(name, phone) {
       const newContact = new Contact(name, phone);
       this.contacts.push(newContact);
-      this.saveContactsToLocalStorage();
+      this.saveContactsToLocalStorage();//saves to localStorage
     }
   
     updateContact(index, name, phone) {
@@ -86,4 +87,10 @@ class Contact {
   const addButton = document.getElementById('addbtn');
   addButton.addEventListener('click', addContact);
   displayContacts();
-  
+  // let today='24/07/2023'
+  // console.log(today)
+  // let todayNumber=today.split('/')
+  // console.log(todayNumber.join(''))
+
+  // let sum=34
+  // console.log(sum-'10')
